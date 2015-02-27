@@ -1,1 +1,11 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#searchField {
+	-fx-background-image:url(/Users/birgerlangebro/Documents/workspace/oving5App/src/ImageResources/searchIcon.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: left center;
+}
+
+#titleInfoBPane {
+	-fx-background-color: orange;
+}
