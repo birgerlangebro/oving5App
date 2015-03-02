@@ -20,3 +20,10 @@
 	-fx-text-fill: orange;
 	-fx-font-size: 10;
 }
+
+#makeGroupAnchorPane {
+	-fx-background-color: orange;
+}
+#makeGroupFlowPane {
+	-fx-background-color: orange;
+}

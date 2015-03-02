@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane stylesheets="@application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <FlowPane id="makeGroupFlowPane" prefHeight="168.0" prefWidth="241.0" stylesheets="@application.css">
+         <children>
+            <Label text="Are you making a grup or a folder?">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <RadioButton mnemonicParsing="false" text="Group">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Folder">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </RadioButton>
+            <Button mnemonicParsing="false" text="?">
+               <FlowPane.margin>
+                  <Insets left="20.0" />
+               </FlowPane.margin>
+            </Button>
+            <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" text="Name:">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <graphic>
+                  <TextField />
+               </graphic>
+            </Label>
+            <Button contentDisplay="TOP" mnemonicParsing="false" text="Cancel">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" text="Save">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>
