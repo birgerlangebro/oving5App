@@ -39,4 +39,15 @@
 	-fx-font-size: 18;	
 }
 
+#personalEventFlowPane {
+	-fx-background-color: #F1DDF3;	
+}
+
+#personalEventFlowPane:hover {
+	-fx-opacity: 0.5;
+}
+
+#greyedOutBusyField {
+	-fx-background-color: lightgray; 	
+}
 }

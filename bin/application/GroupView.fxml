@@ -201,15 +201,184 @@
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0">
                                                                            <children>
                                                                               <GridPane gridLinesVisible="true">
-                                                                                <columnConstraints>
-                                                                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                                                </columnConstraints>
-                                                                                <rowConstraints>
-                                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                                                </rowConstraints>
+                                                                                 <children>
+                                                                                    <Label text="06:00" GridPane.rowIndex="1">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="07:00" GridPane.rowIndex="2">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="08:00" GridPane.rowIndex="3">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="09:00" GridPane.rowIndex="4">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="10:00" GridPane.rowIndex="5">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="11:00" GridPane.rowIndex="6">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="12:00" GridPane.rowIndex="7">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="13:00" GridPane.rowIndex="8">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="14:00" GridPane.rowIndex="9">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="15:00" GridPane.rowIndex="10">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="16:00" GridPane.rowIndex="11">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="17:00" GridPane.rowIndex="12">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="19:00" GridPane.rowIndex="13">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Monday" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                                                       <GridPane.margin>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </GridPane.margin>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Tuesday" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                                                                       <GridPane.margin>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </GridPane.margin>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Wednesday" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Thursday" GridPane.columnIndex="4" GridPane.halignment="CENTER">
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Friday" GridPane.columnIndex="5" GridPane.halignment="CENTER">
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Saturday" GridPane.columnIndex="6" GridPane.halignment="CENTER">
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Sunday" GridPane.columnIndex="7" GridPane.halignment="CENTER">
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <FlowPane id="personalEventFlowPane" alignment="CENTER" columnHalignment="CENTER" prefWrapLength="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                                       <children>
+                                                                                          <Label alignment="CENTER" prefWidth="150.0" text="Breakfast with the boys">
+                                                                                             <FlowPane.margin>
+                                                                                                <Insets />
+                                                                                             </FlowPane.margin>
+                                                                                          </Label>
+                                                                                          <Hyperlink text="Truls," />
+                                                                                          <Hyperlink text="Per" />
+                                                                                          <Label text=" og " />
+                                                                                          <Hyperlink text="Kåre" />
+                                                                                          <Hyperlink text="P 15">
+                                                                                             <FlowPane.margin>
+                                                                                                <Insets />
+                                                                                             </FlowPane.margin>
+                                                                                          </Hyperlink>
+                                                                                       </children>
+                                                                                       <GridPane.margin>
+                                                                                          <Insets />
+                                                                                       </GridPane.margin>
+                                                                                       <padding>
+                                                                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                       </padding>
+                                                                                    </FlowPane>
+                                                                                    <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.rowSpan="4">
+                                                                                       <children>
+                                                                                          <BorderPane id="greyedOutBusyField" prefHeight="80.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                             <center>
+                                                                                                <Label rotate="25.0" text="BUSY" BorderPane.alignment="CENTER">
+                                                                                                   <font>
+                                                                                                      <Font size="23.0" />
+                                                                                                   </font>
+                                                                                                </Label>
+                                                                                             </center>
+                                                                                          </BorderPane>
+                                                                                       </children>
+                                                                                    </AnchorPane>
+                                                                                    <AnchorPane GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="4">
+                                                                                       <children>
+                                                                                          <BorderPane id="greyedOutBusyField" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                             <center>
+                                                                                                <Label rotate="25.0" text="BUSY" BorderPane.alignment="CENTER">
+                                                                                                   <font>
+                                                                                                      <Font size="23.0" />
+                                                                                                   </font>
+                                                                                                </Label>
+                                                                                             </center>
+                                                                                          </BorderPane>
+                                                                                       </children>
+                                                                                    </AnchorPane>
+                                                                                 </children>
+                                                                                 <columnConstraints>
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                 </columnConstraints>
+                                                                                 <rowConstraints>
+                                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                                                                                 </rowConstraints>
                                                                               </GridPane>
                                                                            </children>
                                                                         </AnchorPane>
@@ -227,16 +396,93 @@
                                                                      <content>
                                                                         <AnchorPane>
                                                                            <children>
-                                                                              <GridPane gridLinesVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                                                                <columnConstraints>
-                                                                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                                                </columnConstraints>
-                                                                                <rowConstraints>
-                                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                                                </rowConstraints>
+                                                                              <GridPane gridLinesVisible="true">
+                                                                                 <children>
+                                                                                    <Label text="week 9" GridPane.rowIndex="1">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="week 10" GridPane.rowIndex="2">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="week 11" GridPane.rowIndex="3">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="week 12" GridPane.rowIndex="4">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="week 13" GridPane.rowIndex="5">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label text="week 14" GridPane.rowIndex="6">
+                                                                                       <padding>
+                                                                                          <Insets left="3.0" right="3.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Monday" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                                                       <GridPane.margin>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </GridPane.margin>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Tuesday" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                                                                       <GridPane.margin>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </GridPane.margin>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Wednesday" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Thursday" GridPane.columnIndex="4" GridPane.halignment="CENTER">
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Friday" GridPane.columnIndex="5" GridPane.halignment="CENTER">
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Saturday" GridPane.columnIndex="6" GridPane.halignment="CENTER">
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                    <Label id="weekCalendarDayLabel" text="Sunday" GridPane.columnIndex="7" GridPane.halignment="CENTER">
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" right="10.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                 </children>
+                                                                                 <columnConstraints>
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                                                                 </columnConstraints>
+                                                                                 <rowConstraints>
+                                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                                 </rowConstraints>
                                                                               </GridPane>
                                                                            </children>
                                                                         </AnchorPane>
@@ -251,7 +497,7 @@
                                                 <Button id="rightLeftScrollButtons" mnemonicParsing="false" text="&lt;" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="0.0" />
                                                 <Label text="2. - 8. March" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="10.0" />
                                                 <Button id="rightLeftScrollButtons" mnemonicParsing="false" text="&gt;" AnchorPane.leftAnchor="375.0" AnchorPane.topAnchor="0.0" />
-                                                <DatePicker AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="3.0" />
+                                                <DatePicker promptText="Go to date" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="3.0" />
                                              </children>
                                           </AnchorPane>
                                        </center>

@@ -302,25 +302,56 @@
                                                                                           <Insets left="10.0" right="10.0" />
                                                                                        </padding>
                                                                                     </Label>
-                                                                                    <FlowPane prefWrapLength="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                                    <FlowPane id="personalEventFlowPane" alignment="CENTER" columnHalignment="CENTER" prefWrapLength="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                                        <children>
-                                                                                          <Label text="Breakfast with the boys">
+                                                                                          <Label alignment="CENTER" prefWidth="150.0" text="Breakfast with the boys">
                                                                                              <FlowPane.margin>
-                                                                                                <Insets left="5.0" />
+                                                                                                <Insets />
                                                                                              </FlowPane.margin>
                                                                                           </Label>
-                                                                                          <Hyperlink />
                                                                                           <Hyperlink text="Truls," />
                                                                                           <Hyperlink text="Per" />
                                                                                           <Label text=" og " />
                                                                                           <Hyperlink text="Kåre" />
                                                                                           <Hyperlink text="P 15">
                                                                                              <FlowPane.margin>
-                                                                                                <Insets left="50.0" />
+                                                                                                <Insets />
                                                                                              </FlowPane.margin>
                                                                                           </Hyperlink>
                                                                                        </children>
+                                                                                       <GridPane.margin>
+                                                                                          <Insets />
+                                                                                       </GridPane.margin>
+                                                                                       <padding>
+                                                                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                       </padding>
                                                                                     </FlowPane>
+                                                                                    <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.rowSpan="4">
+                                                                                       <children>
+                                                                                          <BorderPane id="greyedOutBusyField" prefHeight="80.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                             <center>
+                                                                                                <Label rotate="25.0" text="BUSY" BorderPane.alignment="CENTER">
+                                                                                                   <font>
+                                                                                                      <Font size="23.0" />
+                                                                                                   </font>
+                                                                                                </Label>
+                                                                                             </center>
+                                                                                          </BorderPane>
+                                                                                       </children>
+                                                                                    </AnchorPane>
+                                                                                    <AnchorPane GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="4">
+                                                                                       <children>
+                                                                                          <BorderPane id="greyedOutBusyField" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                             <center>
+                                                                                                <Label rotate="25.0" text="BUSY" BorderPane.alignment="CENTER">
+                                                                                                   <font>
+                                                                                                      <Font size="23.0" />
+                                                                                                   </font>
+                                                                                                </Label>
+                                                                                             </center>
+                                                                                          </BorderPane>
+                                                                                       </children>
+                                                                                    </AnchorPane>
                                                                                  </children>
                                                                                  <columnConstraints>
                                                                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
@@ -466,7 +497,7 @@
                                                 <Button id="rightLeftScrollButtons" mnemonicParsing="false" text="&lt;" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="0.0" />
                                                 <Label text="2. - 8. March" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="10.0" />
                                                 <Button id="rightLeftScrollButtons" mnemonicParsing="false" text="&gt;" AnchorPane.leftAnchor="375.0" AnchorPane.topAnchor="0.0" />
-                                                <DatePicker AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="3.0" />
+                                                <DatePicker promptText="Go to date" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="3.0" />
                                              </children>
                                           </AnchorPane>
                                        </center>
