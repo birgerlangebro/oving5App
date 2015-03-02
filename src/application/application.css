@@ -35,5 +35,8 @@
 	-fx-background-color: orange;
 }
 
+#dayCalendarDayLabel {
+	-fx-font-size: 18;	
+}
 
 }
