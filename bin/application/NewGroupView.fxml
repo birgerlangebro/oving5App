@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane stylesheets="@application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane id="makeGroupAnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
    <children>
-      <FlowPane id="makeGroupFlowPane" prefHeight="168.0" prefWidth="241.0" stylesheets="@application.css">
+      <FlowPane id="makeGroupFlowPane" prefHeight="168.0" prefWidth="241.0" prefWrapLength="240.0">
          <children>
             <Label text="Are you making a grup or a folder?">
                <padding>
