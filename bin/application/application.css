@@ -21,7 +21,6 @@
 }
 
 #titleInfoActionButton {
-	/*-fx-background-color: transparent;*/
 	-fx-text-fill: orange;
 }
 
@@ -49,5 +48,4 @@
 
 #greyedOutBusyField {
 	-fx-background-color: lightgray; 	
-}
 }

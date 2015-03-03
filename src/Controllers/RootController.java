@@ -24,6 +24,8 @@ public class RootController implements Initializable{
 
 	@FXML private Button addGroupButton;
 	
+	@FXML private Button firstAcceptButton;
+	
 	// ////////////////////////////
 	// Load icon images
 	// ////////////////////////////
@@ -83,5 +85,8 @@ public class RootController implements Initializable{
 		System.out.println("add group button was clicked!");
 	}
 	
+	@FXML public void firstAcceptButtonClicked(ActionEvent event) {
+		System.out.println("first accept button was clicked!");
+	}
 }
 
