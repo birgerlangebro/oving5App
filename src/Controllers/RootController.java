@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBoxTreeItem;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 import javafx.scene.control.cell.CheckBoxTreeCell;
@@ -30,7 +31,6 @@ public class RootController implements Initializable{
 	
 	@FXML private Button addGroupButton;
 	
-	@FXML private Button firstAcceptButton;
 	
 	// ////////////////////////////
 	// Load icon images

@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RootController">
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RootController">
    <children>
-      <ScrollPane hbarPolicy="NEVER" prefHeight="400.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane hbarPolicy="NEVER" prefHeight="400.0" prefWidth="315.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <content>
-          <AnchorPane>
+          <AnchorPane prefHeight="450.0" prefWidth="300.0">
                <children>
-                  <VBox prefHeight="500.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <VBox prefHeight="397.0" prefWidth="300.0" AnchorPane.bottomAnchor="-34.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <BorderPane>
                            <top>
@@ -87,8 +87,68 @@
                         </BorderPane>
                         <Separator />
                         <Separator />
+                        <BorderPane>
+                           <right>
+                              <HBox BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label contentDisplay="RIGHT" text="Accept">
+                                       <graphic>
+                                          <ToggleButton fx:id="firstAcceptButton1" mnemonicParsing="false" onAction="#firstAcceptButtonClicked" prefHeight="25.0" prefWidth="25.0" text="√" />
+                                       </graphic>
+                                    </Label>
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="X" />
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets right="5.0" />
+                                 </BorderPane.margin>
+                              </HBox>
+                           </right>
+                           <top>
+                              <Label lineSpacing="1.0" text="Birger Langebro invited you to the event review meeting from 10:30 to 12:00 on wednesday. You are awailable." wrapText="true" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                           </top>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </BorderPane>
                         <Separator prefWidth="200.0" />
                         <Separator prefWidth="200.0" />
+                        <BorderPane>
+                           <right>
+                              <HBox BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label contentDisplay="RIGHT" text="Accept">
+                                       <graphic>
+                                          <ToggleButton fx:id="firstAcceptButton11" mnemonicParsing="false" onAction="#firstAcceptButtonClicked" prefHeight="25.0" prefWidth="25.0" text="√" />
+                                       </graphic>
+                                    </Label>
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="X" />
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets right="5.0" />
+                                 </BorderPane.margin>
+                              </HBox>
+                           </right>
+                           <top>
+                              <Label lineSpacing="1.0" text="Emil Torp Nilsen invited you to the event review meeting from 10:30 to 12:00 on wednesday. You are awailable." wrapText="true" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                           </top>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </BorderPane>
                      </children>
                   </VBox>
                </children>
