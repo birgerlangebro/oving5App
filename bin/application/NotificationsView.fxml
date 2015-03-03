@@ -7,224 +7,93 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RootController">
    <children>
-      <VBox prefHeight="300.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <BorderPane prefHeight="200.0" prefWidth="200.0">
-               <top>
-                  <Label lineSpacing="1.0" prefWidth="200.0" text="Elisabeth Våland invited you to the event review meeting from 10:30 to 12:00 on wednesday. You are awailable." wrapText="true" BorderPane.alignment="CENTER">
-                     <font>
-                        <Font size="10.0" />
-                     </font>
-                     <padding>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </padding>
-                  </Label>
-               </top>
-               <right>
-                  <HBox BorderPane.alignment="CENTER">
+      <ScrollPane hbarPolicy="NEVER" prefHeight="400.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane>
+               <children>
+                  <VBox prefHeight="500.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label contentDisplay="RIGHT" text="Accept">
-                           <graphic>
-                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="√" />
-                           </graphic>
-                        </Label>
-                        <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="X" />
-                     </children>
-                     <BorderPane.margin>
-                        <Insets right="5.0" />
-                     </BorderPane.margin>
-                  </HBox>
-               </right>
-               <bottom>
-                  <BorderPane BorderPane.alignment="CENTER">
-                     <center>
-                        <TextArea prefHeight="100.0" BorderPane.alignment="CENTER">
-                           <BorderPane.margin>
-                              <Insets left="5.0" right="5.0" />
-                           </BorderPane.margin>
-                        </TextArea>
-                     </center>
-                     <bottom>
-                        <Button mnemonicParsing="false" text="Send" BorderPane.alignment="CENTER_RIGHT">
-                           <BorderPane.margin>
-                              <Insets right="5.0" top="5.0" />
-                           </BorderPane.margin>
-                        </Button>
-                     </bottom>
-                     <padding>
-                        <Insets bottom="5.0" top="5.0" />
-                     </padding>
-                     <top>
-                        <VBox BorderPane.alignment="CENTER">
-                           <children>
-                              <Separator prefWidth="200.0">
-                                 <padding>
-                                    <Insets left="10.0" right="10.0" />
-                                 </padding>
-                              </Separator>
-                              <Label text="Add a comment to your RSVP:">
+                        <BorderPane>
+                           <top>
+                              <Label lineSpacing="1.0" text="Elisabeth Våland invited you to the event review meeting from 10:30 to 12:00 on wednesday. You are awailable." wrapText="true" BorderPane.alignment="CENTER">
                                  <font>
-                                    <Font size="10.0" />
+                                    <Font size="11.0" />
                                  </font>
                                  <padding>
-                                    <Insets left="5.0" />
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                  </padding>
                               </Label>
-                           </children>
-                           <padding>
-                              <Insets top="5.0" />
-                           </padding>
-                        </VBox>
-                     </top>
-                  </BorderPane>
-               </bottom>
-            </BorderPane>
-            <Separator prefWidth="200.0" />
-            <Separator prefWidth="200.0" />
-            <BorderPane prefHeight="200.0" prefWidth="200.0">
-               <bottom>
-                  <BorderPane disable="true" BorderPane.alignment="CENTER">
-                     <bottom>
-                        <Button mnemonicParsing="false" text="Send" BorderPane.alignment="CENTER_RIGHT">
-                           <BorderPane.margin>
-                              <Insets right="5.0" top="5.0" />
-                           </BorderPane.margin>
-                        </Button>
-                     </bottom>
-                     <center>
-                        <TextArea prefHeight="100.0" BorderPane.alignment="CENTER">
-                           <BorderPane.margin>
-                              <Insets left="5.0" />
-                           </BorderPane.margin>
-                        </TextArea>
-                     </center>
-                     <padding>
-                        <Insets bottom="5.0" top="5.0" />
-                     </padding>
-                     <top>
-                        <VBox BorderPane.alignment="CENTER">
-                           <children>
-                              <Separator prefWidth="200.0">
+                           </top>
+                           <right>
+                              <HBox BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label contentDisplay="RIGHT" text="Accept">
+                                       <graphic>
+                                          <ToggleButton fx:id="firstAcceptButton" mnemonicParsing="false" onAction="#firstAcceptButtonClicked" prefHeight="25.0" prefWidth="25.0" text="√" />
+                                       </graphic>
+                                    </Label>
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="X" />
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets right="5.0" />
+                                 </BorderPane.margin>
+                              </HBox>
+                           </right>
+                           <bottom>
+                              <BorderPane BorderPane.alignment="CENTER">
+                                 <center>
+                                    <TextArea prefHeight="100.0" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets left="5.0" right="5.0" />
+                                       </BorderPane.margin>
+                                    </TextArea>
+                                 </center>
+                                 <bottom>
+                                    <Button mnemonicParsing="false" text="Send" BorderPane.alignment="CENTER_RIGHT">
+                                       <BorderPane.margin>
+                                          <Insets right="5.0" top="5.0" />
+                                       </BorderPane.margin>
+                                    </Button>
+                                 </bottom>
                                  <padding>
-                                    <Insets left="10.0" right="10.0" />
+                                    <Insets bottom="5.0" top="5.0" />
                                  </padding>
-                              </Separator>
-                              <Label text="Add a comment to your RSVP:">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                                 <padding>
-                                    <Insets left="5.0" />
-                                 </padding>
-                              </Label>
-                           </children>
-                           <padding>
-                              <Insets top="5.0" />
-                           </padding>
-                        </VBox>
-                     </top>
-                  </BorderPane>
-               </bottom>
-               <right>
-                  <HBox BorderPane.alignment="CENTER">
-                     <children>
-                        <Label contentDisplay="RIGHT" text="Accept">
-                           <graphic>
-                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="√" />
-                           </graphic>
-                        </Label>
-                        <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="X" />
+                                 <top>
+                                    <VBox BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Separator>
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                          </Separator>
+                                          <Label text="Add a comment to your RSVP:">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="5.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </top>
+                              </BorderPane>
+                           </bottom>
+                        </BorderPane>
+                        <Separator />
+                        <Separator />
+                        <Separator prefWidth="200.0" />
+                        <Separator prefWidth="200.0" />
                      </children>
-                     <BorderPane.margin>
-                        <Insets right="5.0" />
-                     </BorderPane.margin>
-                  </HBox>
-               </right>
-               <top>
-                  <Label lineSpacing="1.0" prefWidth="200.0" text="Birger Langebro invited you to the event review meeting from 10:30 to 12:00 on wednesday. You are awailable." wrapText="true" BorderPane.alignment="CENTER">
-                     <font>
-                        <Font size="10.0" />
-                     </font>
-                     <padding>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </padding>
-                  </Label>
-               </top>
-            </BorderPane>
-            <Separator prefWidth="200.0" />
-            <Separator prefWidth="200.0" />
-            <BorderPane prefHeight="200.0" prefWidth="200.0">
-               <bottom>
-                  <BorderPane disable="true" BorderPane.alignment="CENTER">
-                     <bottom>
-                        <Button mnemonicParsing="false" text="Send" BorderPane.alignment="CENTER_RIGHT">
-                           <BorderPane.margin>
-                              <Insets right="5.0" top="5.0" />
-                           </BorderPane.margin>
-                        </Button>
-                     </bottom>
-                     <center>
-                        <TextArea prefHeight="100.0" BorderPane.alignment="CENTER">
-                           <BorderPane.margin>
-                              <Insets left="5.0" />
-                           </BorderPane.margin>
-                        </TextArea>
-                     </center>
-                     <padding>
-                        <Insets bottom="5.0" top="5.0" />
-                     </padding>
-                     <top>
-                        <VBox BorderPane.alignment="CENTER">
-                           <children>
-                              <Separator prefWidth="200.0">
-                                 <padding>
-                                    <Insets left="10.0" right="10.0" />
-                                 </padding>
-                              </Separator>
-                              <Label text="Add a comment to your RSVP:">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                                 <padding>
-                                    <Insets left="5.0" />
-                                 </padding>
-                              </Label>
-                           </children>
-                           <padding>
-                              <Insets top="5.0" />
-                           </padding>
-                        </VBox>
-                     </top>
-                  </BorderPane>
-               </bottom>
-               <right>
-                  <HBox BorderPane.alignment="CENTER">
-                     <children>
-                        <Label contentDisplay="RIGHT" text="Accept">
-                           <graphic>
-                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="√" />
-                           </graphic>
-                        </Label>
-                        <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="X" />
-                     </children>
-                     <BorderPane.margin>
-                        <Insets right="5.0" />
-                     </BorderPane.margin>
-                  </HBox>
-               </right>
-               <top>
-                  <Label lineSpacing="1.0" prefWidth="200.0" text="Ibrahim Mohammed invited you to the event review meeting from 10:30 to 12:00 on wednesday. You are awailable." wrapText="true" BorderPane.alignment="CENTER">
-                     <font>
-                        <Font size="10.0" />
-                     </font>
-                     <padding>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </padding>
-                  </Label>
-               </top>
-            </BorderPane>
-         </children></VBox>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
    </children>
 </AnchorPane>

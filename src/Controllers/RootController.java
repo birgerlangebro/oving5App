@@ -9,8 +9,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBoxTreeItem;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
+import javafx.scene.control.cell.CheckBoxTreeCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -21,7 +23,11 @@ public class RootController implements Initializable{
 	// ////////////////////////////
 
 	@FXML private TreeView<String> groupTreeView;
-
+	
+	@FXML private TreeView<String> myCalendarsTreeView;
+	
+	@FXML private Button addCalendarButton;
+	
 	@FXML private Button addGroupButton;
 	
 	@FXML private Button firstAcceptButton;
@@ -34,13 +40,42 @@ public class RootController implements Initializable{
 	private final Image girlIcon = new Image(getClass().getResourceAsStream("/ImageResources/girlIcon.png"));
 	private final Image boyIcon = new Image(getClass().getResourceAsStream("/ImageResources/boyIcon.png"));
 	private final Image groupIcon = new Image(getClass().getResourceAsStream("/ImageResources/groupIcon.png"));
+	private final Image calendarIcon = new Image(getClass().getResourceAsStream("/ImageResources/calendarIcon.png"));
+	
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// must be called in order to populate the TreeView with TreeItems
+		populateMyCalendarsTree();
 		populateGroupTree(); 
 	}
 	
+	private void populateMyCalendarsTree() {
+		
+		TreeItem<String> rootItem = new TreeItem<String> (
+			"Calendars", new ImageView(calendarIcon)
+		);
+		rootItem.setExpanded(true);
+		
+		String[] myCalendarNames = new String[4];
+		myCalendarNames[0] = "Bocciagroup";
+		myCalendarNames[1] = "Personal";
+		myCalendarNames[2] = "Administration";
+		myCalendarNames[3] = "Calendar Project";
+				
+		
+		for (int i = 0; i < 4; i++) {
+			CheckBoxTreeItem<String> item = 
+					new CheckBoxTreeItem<String>(myCalendarNames[i]);
+		    item.setExpanded(true); 
+		    rootItem.getChildren().add(item);
+		}
+		
+		myCalendarsTreeView.setCellFactory(CheckBoxTreeCell.<String>forTreeView());    
+		
+		myCalendarsTreeView.setRoot(rootItem);
+		
+	}
 	
 	private void populateGroupTree() {
 		// make a root item. The tree must have a root item
@@ -83,6 +118,8 @@ public class RootController implements Initializable{
 	// it is bound to the "+ add group or folder" button
 	@FXML public void addGroupButtonClicked(ActionEvent event) {
 		System.out.println("add group button was clicked!");
+		
+
 	}
 	
 	@FXML public void firstAcceptButtonClicked(ActionEvent event) {
